@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up - Fitness Zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="webpage.html"><i class="fa fa-close fa-2x" style="color:rgb(51, 51, 133);"></i></a>
+    </header>
+
+    <div class="div">
+
+        <form action="userlogin.html" class="signup" name="form" onsubmit="return validated()">
+            <center>
+                <h1 style="color: blue;">Sign up</h1>
+            </center>
+            <hr>
+
+            <h4>Name</h4>
+            <input autocomplete="off" type="text" name="Name" placeholder="Enter your name" />
+            <div id="name_error">Please enter your Name</div>
+
+            <h4>Email</h4>
+            <input autocomplete="off" type="email" name="email" placeholder="Enter email address" />
+            <div id="email_error">Please enter your email address</div>
+
+            <h4>Phone</h4>
+            <input autocomplete="off" type="tel" name="phone" placeholder="Enter mobile number" />
+            <div id="ph_error">Phone number must contain 10 digit number</div>
+
+            <h4>Password</h4>
+            <input type="password" name="pass" placeholder="Create password">
+            <div id="pass_error">Please create a password</div>
+
+            <br><br><br>
+
+            <button type="submit" class="submitbutton">Create an account</button>
+            <p class="login">Already have an account?&nbsp;<a href="login_website.html">login</a></p>
+            <div class="resetbutton">
+                <center>Note: Click the reset button to clear the form
+                    <input type="reset" onclick="resetbutton()" class="reset">
+                </center>
+            </div>
+            <br>
+        </form>
+
+
+    </div>
+
+    <script>
+        var Name = document.forms['form']['Name'];
+        var email = document.forms['form']['email'];
+        var phone = document.forms['form']['phone'];
+        var pass = document.forms['form']['pass'];
+
+        var name_error = document.getElementById('name_error');
+        var email_error = document.getElementById('email_error');
+        var ph_error = document.getElementById('ph_error');
+        var pass_error = document.getElementById('pass_error');
+
+        Name.addEventListener('textInput', Name_Verify);
+        email.addEventListener('textInput', email_Verify);
+        phone.addEventListener('textInput', ph_Verify);
+        pass.addEventListener('textInput', pass_Verify);
+
+        function validated() {
+            if (Name.value.length < 2) {
+                name_error.style.display = "block";
+                Name.focus();
+                return false;
+            }
+            if (email.value.length < 9) {
+                email_error.style.display = "block";
+                email.focus();
+                return false;
+            }
+            if (phone.value.length !=10) {
+                ph_error.style.display = "block";
+                phone.focus();
+                return false;
+            }
+            if (pass.value.length < 6) {
+                pass_error.style.display = "block";
+                pass.focus();
+                return false;
+            }
+        }
+
+
+        function Name_Verify() {
+            if (Name.value.length >= 1) {
+                name_error.style.display = "none";
+            }
+        }
+        function email_Verify() {
+            if (email.value.length >= 8) {
+                email_error.style.display = "none";
+            }
+        }
+        function ph_Verify() {
+            if (phone.value.length == 9) {
+                ph_error.style.display = "none";
+            }
+        }
+        function pass_Verify() {
+            if (pass.value.length >= 5) {
+                pass_error.style.display = "none";
+            }
+        }
+        
+
+        function resetbutton() {
+            alert("The form was reset");
+        }
+    </script>
+</body>
+
+</html>

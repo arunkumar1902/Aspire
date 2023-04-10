@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Log in - Fitness Zone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
+
+    <body>
+
+        <header>
+            <a href="webpage.html"><i class="fa fa-close fa-2x" style="color: rgb(51, 51, 133);"></i></a>
+        </header>
+        
+        <div class="div">
+            <div  class="login" >
+                <center><h1>Login</h1></center>
+                <hr>
+                <form action="userlogin.html" name="form" onsubmit="return validated()">
+        
+                    <h4>Email</h4>
+                    <input autocomplete="off" type="email" name="email" placeholder="Enter email">
+                    <div id="email_error">Please fill up your email</div>
+    
+                    <h4>Password</h4>
+                    <input type="password" name="password" placeholder="Enter password">
+                    <div id="password_error">Please fill up your password</div>
+                    
+                    <br><br><br>
+                    <button type="submit">Login</button>
+                    <br><br>
+                </form>
+                <center><a href="#" class="forgotpass">Forgot&nbsp;password?</a></center>
+                <p class="signin">Create an account?&nbsp;<a href="signup_website.html">sign&nbsp;up</a></p>
+            </div>
+        </div>
+
+        <script>
+            
+            var email =document.forms['form']['email'];
+            var password =document.forms['form']['password'];
+
+            var email_error= document.getElementById('email_error');
+            var password_error= document.getElementById('password_error');
+
+            email.addEventListener('textInput',email_Verify);
+            password.addEventListener('textInput',password_Verify);
+
+            function email_Verify(){
+                if(email.value.length >=8){
+                    email_error.style.display="none";
+                }
+            }
+            function password_Verify(){
+                if(password.value.length >=5){
+                    password_error.style.display="none";
+                }
+            }
+            function validated(){
+                if(email.value.length<9){
+                    email_error.style.display="block";
+                    email.focus();
+                    return false;
+                }
+                if(password.value.length < 6){
+                    password_error.style.display="block";
+                    password.focus();
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

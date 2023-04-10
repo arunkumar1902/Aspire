@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(253, 251, 251);   
+}
+header{
+    text-align: right;
+    padding-right: 30px;
+}
+.div{
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+}
+.login{
+    background-color: rgba(215, 217, 219, 0.636);
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 20px;
+    width: 25%;
+}
+.login input{
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 93%;
+}
+.login a{
+    color: blue;
+}
+h1{
+    color: blue;
+}
+button{
+    font-size: larger;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgba(55, 106, 226, 0.923);
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    color: white;
+    background-color: rgb(85, 98, 234) ;
+}
+h4{
+    font-size: larger;
+    color: rgb(51, 51, 133);
+}
+.forgotpass{
+    font-size: large;
+    text-decoration: none;
+}
+.forgotpass:hover{
+    text-decoration: underline;
+}
+.signin{
+    font-size:larger;
+    text-align: center;
+}
+.signin a{
+    text-decoration: none;
+}
+.signin a:hover{
+    text-decoration: underline;
+}
+.login #username_error, .login #email_error, .login #password_error{
+    margin-top: 5px;
+    width:98%;
+    font-size: 18px;
+    color: red;
+    background: rgba(255,0,0,0.2);
+    text-align: center;
+    border-radius: 7px;
+    border:1px solid #ef9a9a;
+    display: none;
+}
+@media(max-width:750px){
+    .login{
+        width: 60%;
+    }
+}
