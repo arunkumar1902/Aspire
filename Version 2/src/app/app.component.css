@@ -1,0 +1,185 @@
+/* Header navigation */
+nav{
+  background-color: rgb(87, 87, 164);
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+}
+.logo{
+  display: flex;
+  height: 8vh;
+}
+.logo img{
+  height: 7vh;
+  padding: 5px;
+}
+.profilediv{
+  position: relative;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.profile{
+  width: 400%;
+  right: 10px;
+  color: white;
+  padding: 10px;
+  display: none;
+  position:absolute;
+  background-color:rgb(87, 87, 164);
+}
+.profile a{
+  display: block;
+}
+.profilediv:hover .profile{
+  display: block;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.navigation{
+  padding: 8px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation a{
+  padding: 10px;
+  text-align: center;
+  font-size: larger;
+  font-weight:bold;
+  cursor: pointer;
+}
+.navigation a:hover{
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+}
+.logo h2{
+  margin-top: 7%;
+  color: white;
+}
+
+#login{
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 0px;
+}
+#login:hover{
+  color: #000000;
+  border: 1px solid;
+}
+
+
+
+/* Footer */
+footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 125px;
+  background-color: rgb(255, 255, 255);
+}
+.div1{
+  width: 80%;
+}
+.div1 h3{
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* About */
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.aboutdiv1{
+  padding: 50px;
+  height: 50vh;
+  width: 80%;
+  border: 1px solid rgb(218, 216, 216);
+  border-radius: 30px;
+  box-shadow:10px 10px 10px silver;
+}
+.aboutdiv1 h2{
+  color: #000;
+  font-size: xx-large;
+  text-align: center;
+}
+.aboutdiv1 p{
+  padding-top: 50px;
+}
+
+
+/* foot */
+.foot{
+  display: flex;
+  justify-content: center;
+}
+.details{
+  padding: 15px;
+  border: 1px solid rgb(218, 216, 216);
+  border-radius: 30px;
+  box-shadow:10px 10px 10px silver;
+}
+.links{
+  width: 20%;
+}
+.details h3{
+  color: rgb(33, 81, 144);
+  font-size: x-large;
+  text-align: center;
+}
+.details a{
+  color: black;
+  padding-bottom: 15px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+}
+.details a:hover{
+  font-weight: bolder;
+  color: black;
+}
+
+
+/* footer - social  */
+.social{
+  display: flex;
+  justify-content: center;
+}
+.details .fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 30px;
+  height: 3vh;
+  margin: 10px;
+  border-radius: 15px;
+}
+.fa-facebook,.fa-twitter,.fa-linkedin,.fa-instagram  {
+  border: 1px solid;
+}
+.fa-facebook:hover,.fa-twitter:hover,.fa-linkedin:hover,.fa-instagram:hover{
+  font-size: xx-large;
+  height: 3vh;
+}
+.feedback{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.feedback textarea{
+  padding: 10px;
+}
+.feedback button{
+  width: min-content;
+  background-color: rgb(33, 81, 144);
+  color: white;
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}

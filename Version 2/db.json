@@ -1,0 +1,155 @@
+{
+  "users": [
+    {
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin@123",
+      "id": 1
+    },
+    {
+      "name": "ARUN KUMAR",
+      "email": "karun1902002@gmail.com",
+      "phone": "9361672063",
+      "address": "DXFGVHBJN",
+      "password": "123@qwe",
+      "cpassword": "123@qwe",
+      "id": 2
+    },
+    {
+      "name": "bhadri",
+      "email": "bhadri@gmail.com",
+      "phone": "9876543219",
+      "address": "sdxfcgvhbjnkml",
+      "password": "bhadri@123",
+      "cpassword": "bhadri@123",
+      "id": 3
+    },
+    {
+      "name": "ARUN KUMAR",
+      "email": "karu1902002@gmail.com",
+      "phone": "9361672063",
+      "address": "fgvhbj",
+      "password": "123@qwe",
+      "cpassword": "123@qwe",
+      "id": 4
+    }
+  ],
+  "home": [
+    {
+      "id": 1,
+      "title": "Shoulder Press",
+      "description": "Shoulder Press Machine, For Gym",
+      "price": "25,500",
+      "discountprice": "19,000",
+      "rating": "4.6 / 5 ",
+      "image": "/assets/shoulder/shoulderpress.png"
+    },
+    {
+      "id": 2,
+      "title": "Motorized Treadmill",
+      "description": "Motorized Treadmill SOLO-500B, For Gym, Model Name/Number: Stairmill",
+      "price": "2.10 Lakh",
+      "discountprice": "1.75 Lakh",
+      "rating": "4.5 / 5 ",
+      "image": "/assets/treadmill/motorized treadmill.png"
+    },
+    {
+      "id": 3,
+      "title": "Commercial Multi Gym",
+      "description": "Light Commercial Multi Gym",
+      "price": "1.20 Lakh",
+      "discountprice": "1.16 Lakh",
+      "rating": "4.3 / 5 ",
+      "image": "/assets/gymequipment/multigym.png"
+    },
+    {
+      "id": 4,
+      "title": "Atlantis Biceps",
+      "description": "Atlantis-019 Biceps",
+      "price": "98,999",
+      "discountprice": "92,500",
+      "rating": "4.6 / 5 ",
+      "image": "/assets/armexercise/atlantisbiceps.png"
+    }
+  ],
+  "gymequipment": [
+    {
+      "id": 1,
+      "category": "gymequipment",
+      "title": "6 Station Multi Gym",
+      "description": "6 Station Multi Gym, Weight - 180 Kgs",
+      "price": "36,500",
+      "discountprice": "35,000",
+      "rating": "4.5 / 5 ",
+      "image": "/assets/gymequipment/six station multigym.png",
+      "th1": "Number Of Stations",
+      "th2": "Maximum Resistance",
+      "th3": "Features",
+      "th4": "Weight",
+      "td1": "6 Stations",
+      "td2": "150-200 lbs",
+      "td3": "Low maintenance,Durable",
+      "td4": "180 Kgs"
+    }
+  ],
+  "treadmill": [
+    {
+      "id": 1,
+      "category": "treadmill",
+      "title": "Manual Treadmill",
+      "description": "Manual Multi Functional Treadmill",
+      "price": "12,500",
+      "discountprice": "11,999",
+      "rating": "4.5 / 5 ",
+      "image": "/assets/treadmill/manual multi treadmill.png",
+      "th1": "Types Of Treadmill",
+      "th2": "Category",
+      "th3": "Handling Options",
+      "th4": "Color",
+      "td1": "Manual, Folding",
+      "td2": "Heavy Duty Home Use",
+      "td3": "Foldable, Adjustable Incline",
+      "td4": "Ivory"
+    }
+  ],
+  "armexercise": [
+    {
+      "id": 1,
+      "category": "armexercise",
+      "title": "Atlantis Biceps",
+      "description": "Atlantis-019 Biceps",
+      "price": "98,999",
+      "discountprice": "92,500",
+      "rating": "4.6 / 5 ",
+      "image": "/assets/armexercise/atlantisbiceps.png",
+      "th1": "Weight Stack",
+      "th2": "Net Weight",
+      "th3": "Frame Guage",
+      "th4": "Seat",
+      "td1": "100 Kg",
+      "td2": "260 Kg",
+      "td3": "11 Guage",
+      "td4": "Honeycomb Foam (Anti-Fungus)"
+    }
+  ],
+  "shoulder": [
+    {
+      "id": 1,
+      "category": "shoulder",
+      "title": "Shoulder Press",
+      "description": "Shoulder Press Machine, For Gym",
+      "price": "25,500",
+      "discountprice": "19,000",
+      "rating": "4.6 / 5 ",
+      "image": "/assets/shoulder/shoulderpress.png",
+      "th1": "Machine Type",
+      "th2": "Usage/Application",
+      "th3": "Country of Origin",
+      "th4": "Color",
+      "td1": "Chest And Shoulder Press",
+      "td2": "Gym",
+      "td3": "Made in India",
+      "td4": "Multicolor"
+    }
+  ]
+}

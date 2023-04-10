@@ -1,0 +1,77 @@
+<body>
+  <!-- Header navigation  -->
+
+  <nav>
+    <div class="logo">
+      <a routerLink="/home">
+        <img src="/assets/logo.png" />
+      </a>
+      <h2>Fitness Zone</h2>
+    </div>
+
+    <div class="navigation">
+      <!-- <a routerLink="admin" *ngIf="slogin.islogin()">Admin</a> -->
+      <a routerLink="home" id="home">Home</a>
+      <a routerLink="products">Products</a>
+      <a routerLink="cart" class="fa fa-shopping-cart"></a>
+      <a routerLink="login" *ngIf="!slogin.islogin()" id="login">Login</a>
+      <a *ngIf="slogin.islogin()" class="profilediv"><i class="fa fa-user"></i> <br>
+        <div class="profile">
+          <p>{{slogin.getname()["name"]}}</p><br>
+          <a *ngIf="slogin.islogin()" (click)="logout()">Logout</a>
+        </div>
+      </a>
+    </div>
+
+  </nav>
+
+  <router-outlet></router-outlet>
+
+  <!-- footer -->
+  <footer>
+    <div class="div1">
+
+      <!-- about -->
+      <div class="about" id="about">
+        <div class="aboutdiv1">
+          <h2>About</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- foot -->
+      <div class="foot">
+        <div class="details">
+          <h3>Contact Us</h3>
+          <hr />
+          <p><i class="fa fa-phone"></i> +91 9361672063</p>
+          <p><i class="fa fa-envelope"></i>kumar1902002@gmail.com</p>
+        </div>
+
+        <div class="details links">
+          <h3>Quick Links</h3>
+          <hr />
+          <br />
+          <a href="#home">Home</a>
+          <a routerLink="/products">Products</a>
+          <a href="#about">About</a>
+        </div>
+
+        <div class="details links">
+          <h3>Follow Us</h3>
+          <hr />
+          <br />
+          <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+
+      <h3>Copyright © 2023 All Rights Reserved by Fitness Zone</h3>
+    </div>
+  </footer>
+</body>

@@ -1,0 +1,80 @@
+h1{
+  text-align: center;
+}
+h2{
+  margin: 3%;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.main{
+  display: flex;
+  justify-content: center;
+}
+.products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 95%;
+}
+.equipments{
+  width: 85%;
+  padding: 20px;
+  margin: 3px;
+  border: 1px solid silver;
+  border-radius: 20px;
+}
+
+.equipments:hover{
+  box-shadow: 10px 5px 10px 5px silver;
+  border: 2px solid silver;
+}
+.heading{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.heading h3{
+  font-size: larger;
+}
+.rating{
+  font-size: small;
+}
+.heading .fa-star{
+  padding: 1px;
+  color: yellow;
+  background-color: blue;
+}
+.equipment-image img{
+  width: 100%;
+}
+.equipment-content a{
+  color: rgb(33, 81, 144);
+  text-decoration: none;
+}
+.equipment-content a:hover{
+  color: orangered;
+}
+.price{
+  text-decoration: none;
+  font-size: larger;
+}
+
+/* admin add products */
+
+.addproduct{
+  width: 85%;
+  margin: 3px;
+  border: 1px solid silver;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addproduct a{
+  padding: 50%;
+  font-size: 100px;
+  color: rgb(84, 89, 94);
+}
+.addproduct:hover{
+  box-shadow: 10px 5px 10px 5px silver;
+  border: 2px solid silver;
+}

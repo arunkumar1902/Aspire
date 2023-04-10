@@ -1,0 +1,81 @@
+.div1{
+  display: flex;
+  justify-content: center;
+}
+.productlist{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content:space-between;
+  width: 57%;
+  padding: 20px;
+}
+.productlist a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: 1px solid rgb(229, 227, 227);
+  padding: 15px;
+  border-radius: 15px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.productlist a:hover{
+  box-shadow: 2px 2px silver;
+  border: 1px solid silver;
+}
+#bg{
+  background-color: rgb(87, 87, 164);
+  color: white;
+}
+#bg:hover{
+  border: none;
+  box-shadow: none;
+}
+
+.products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 35px;
+}
+
+.equipments{
+  width: 85%;
+  padding: 20px;
+  margin: 3px;
+  border: 1px solid silver;
+  border-radius: 20px;
+}
+.equipments:hover{
+  box-shadow: 10px 5px 10px 5px silver;
+  border: 2px solid silver;
+}
+.heading{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.heading h3{
+  font-size: larger;
+}
+.rating{
+  font-size: small;
+}
+.heading .fa-star{
+  padding: 1px;
+  color: yellow;
+  background-color: blue;
+}
+.equipment-image img{
+  width: 100%;
+}
+.equipment-content a{
+  color: rgb(33, 81, 144);
+  text-decoration: none;
+}
+.equipment-content a:hover{
+  color: orangered;
+}
+.price{
+  text-decoration: none;
+  font-size: larger;
+}

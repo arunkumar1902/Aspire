@@ -1,0 +1,76 @@
+<body>
+
+  <div class="div1">
+    <div class="productlist">
+      <a routerLink="/gymequipment">Gym Equipment</a><br />
+      <a routerLink="/treadmill">Exercise Treadmill</a><br />
+      <a routerLink="/armexrecise">Arm Exercise Machine</a><br />
+      <a routerLink="/shoulder">Shoulder Exercise Machines</a><br />
+    </div>
+  </div>
+
+  <div class="back">
+   / <a routerLink="/products">Products</a> / <a routerLink="/{{finalProduct.category}}">{{finalProduct.category}}</a> / <a>{{finalProduct.title}}</a>
+  </div>
+  <br>
+
+  <div class="product" >
+
+
+      <div class="product-details">
+
+        <div class="image">
+          <img src={{finalProduct.image}} />
+        </div>
+
+        <div class="details">
+
+          <h2>{{finalProduct.description}}</h2>
+
+          <table>
+            <tr>
+              <th>{{finalProduct.th1}}</th>
+              <td>{{finalProduct.td1}}</td>
+            </tr>
+            <tr>
+              <th>{{finalProduct.th2}}</th>
+              <td>{{finalProduct.td2}}</td>
+            </tr>
+            <tr>
+              <th>{{finalProduct.th3}}</th>
+              <td>{{finalProduct.td3}}</td>
+            </tr>
+            <tr>
+              <th>{{finalProduct.th4}}</th>
+              <td>{{finalProduct.td4}}</td>
+            </tr>
+          </table>
+
+          <p>
+            Price:&nbsp; &#8377;
+            <del>{{finalProduct.price}}</del>&nbsp;
+            <ins class="price">&#8377;{{finalProduct.discountprice}}</ins>
+          </p>
+
+          <p>
+            Rating:&nbsp;
+            <span class="fa fa-star" style="color: red"></span>
+            <span class="fa fa-star" style="color: red"></span>
+            <span class="fa fa-star" style="color: red"></span>
+            <span class="fa fa-star" style="color: red"></span>
+            <span class="fa fa-star"></span>
+          </p>
+
+          <div class="button">
+
+            <a routerLink="/cart" class="addtocart" >Add to cart</a>
+            <a routerLink="/buy" class="buy">Buy Now</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</body>

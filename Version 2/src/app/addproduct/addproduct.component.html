@@ -1,0 +1,118 @@
+<div class="backbutton">
+  <a routerLink="/admin"><i class="fa fa-close"></i></a>
+</div>
+
+<div class="addproductdiv1">
+  <div class="addproductdiv2">
+    <form [formGroup]="addproduct" (ngSubmit)="submitForm()">
+
+      <div class="formdivision">
+
+        <div class="formleft">
+          <h3>Product details</h3>
+          <br>
+          <!-- Product category -->
+          <div class="input">
+            <label for="category">Product Category</label>
+            <select id="category" name="category" formControlName="category">
+              <option value="gymequipment">Gym Equipment</option>
+              <option value="treadmill">Treadmill</option>
+              <option value="armexercise">Arm Exercise</option>
+              <option value="shoulder">Shoulder</option>
+            </select>
+          </div>
+
+          <!-- title -->
+          <div class="input">
+            <label for="title">Product Title</label>
+            <input type="text" id="title" formControlName="title" />
+          </div>
+
+          <!-- description -->
+          <div class="input">
+            <label for="description">Product Description</label>
+            <input type="text" id="description" formControlName="description" />
+          </div>
+
+
+          <!-- rating -->
+          <div class="input">
+            <label for="rating">Product Rating</label>
+            <input type="text" id="rating" formControlName="rating" />
+          </div>
+
+          <!-- imagepath -->
+          <div class="input">
+            <label for="image">Product image path</label>
+            <input type="text" id="image" formControlName="image" />
+          </div>
+        </div>
+
+        <div class="formmiddle">
+
+          <h3>Product table head details</h3>
+          <br>
+          <!-- table head -->
+          <div class="input">
+            <label for="th1">Table Head 1</label>
+            <input type="text" id="th1" formControlName="th1" />
+          </div>
+          <div class="input">
+            <label for="th1">Table Head 2</label>
+            <input type="text" id="th1" formControlName="th2" />
+          </div>
+          <div class="input">
+            <label for="th1">Table Head 3</label>
+            <input type="text" id="th1" formControlName="th3" />
+          </div>
+          <div class="input">
+            <label for="th1">Table Head 4</label>
+            <input type="text" id="th1" formControlName="th4" />
+          </div>
+
+          <!-- price -->
+          <div class="input">
+            <label for="price">Product Price</label>
+            <input type="text" id="price" formControlName="price" />
+          </div>
+        </div>
+
+        <div class="formright">
+
+          <h3>Product table data details</h3>
+          <br>
+          <!-- table data -->
+          <div class="input">
+            <label for="th1">Table Data 1</label>
+            <input type="text" id="th1" formControlName="td1" />
+          </div>
+          <div class="input">
+            <label for="th1">Table Data 2</label>
+            <input type="text" id="th1" formControlName="td2" />
+          </div>
+          <div class="input">
+            <label for="th1">Table Data 3</label>
+            <input type="text" id="th1" formControlName="td3" />
+          </div>
+          <div class="input">
+            <label for="th1">Table Data 4</label>
+            <input type="text" id="th1" formControlName="td4" />
+          </div>
+
+          <!-- discountprice -->
+          <div class="input">
+            <label for="discountprice">Discountprice</label>
+            <input type="text" id="discountprice" formControlName="discountprice"
+            />
+          </div>
+
+        </div>
+
+      </div>
+      <br />
+      <div class="button">
+        <button [disabled]="!this.addproduct.valid">Add Product</button>
+      </div>
+    </form>
+  </div>
+</div>
